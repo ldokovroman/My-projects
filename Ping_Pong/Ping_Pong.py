@@ -105,7 +105,7 @@ window.listen()
 window.onkey(move_up_l, "w")
 window.onkey(move_down_l, "s")
 window.onkey(move_up_r, "Up")
-window.onkey(move_down_r, "")
+window.onkey(move_down_r, "Down")
 
 def check(rocket):
     return rocket.ycor() - 60 <= ball.ycor() <= rocket.ycor() + 60 \
