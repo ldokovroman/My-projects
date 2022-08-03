@@ -88,7 +88,7 @@ score_r_t.up()
 score_r_t.color("white")
 score_r_t.speed(0)
 score_r_t.goto(200, 300)
-score_r_t.write(score_l, font=FONT)
+score_r_t.write(score_r, font=FONT)
 
 DX = 1
 DY = 1
