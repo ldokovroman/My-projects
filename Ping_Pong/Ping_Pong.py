@@ -92,6 +92,7 @@ score_r_t.write(score_r, font=FONT)
 
 DX = 1
 DY = 1
+D = 10 / (2 ** 0.5) + 10
 
 ball = turtle.Turtle()
 ball.up()
@@ -133,7 +134,7 @@ while score_l < 10 and score_r < 10:
         ball.dx = choice([-DX, DX])
         ball.dy = choice([-DX, DX])
     if check(right_rocket):
-        if ball.xcor() >= right_rocket.xcor() - 10:
+        if ball.xcor() > right_rocket.xcor() - D:
             ball.dy = -ball.dy
         else:
             ball.dx = -ball.dx
@@ -142,7 +143,7 @@ while score_l < 10 and score_r < 10:
         ball.dy += ball.dy / abs(ball.dy) / 10
         ball.dx += ball.dx / abs(ball.dx) / 10
     if check(left_rocket):
-        if ball.xcor() <= left_rocket.xcor() + 10:
+        if ball.xcor() < left_rocket.xcor() + D:
             ball.dy = -ball.dy
         else:
             ball.dx = -ball.dx
