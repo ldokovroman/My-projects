@@ -154,6 +154,10 @@ h1 {
 }
 
 #subscribe {
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: white;
     width: 300px;
     height: 55px;
     background: #817070;
@@ -169,11 +173,8 @@ h1 {
     color: white;
 }
 
-#subscribe:hover {
-    font-weight: 300;
-    font-size: 20px;
-    text-align: center;
-    color: white;
+#subscribe:focus {
+    outline: none;
 }
 
 .submit {
@@ -184,6 +185,7 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: #817070;
+    border: none;
 }
 
 .submit:hover {
