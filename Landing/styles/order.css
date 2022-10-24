@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+}
+
+header {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    height: 525px;
+    background-color: #817070;
+    padding-top: 86px;
+}
+
+.customer {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-family: inherit;
+    font-style: inherit;
+    height: 55px;
+    background-color: #817070;
+    border: 3px solid white;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+input::placeholder {
+    text-align: center;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+[type="text"] {
+    width: 300px;
+    margin: auto 10px;
+}
+
+.orders {
+    padding-top: 30px;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+}
+
+.order__coffee {
+    margin-right: 132px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order__food {
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 55px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background: #ebe2e2;
+}
+
+.checkbox + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background: #817070;
+}
+
+.checkbox:checked + label:after {
+    background: #6a4646;
+}
+
+label {
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+[type="number"] {
+    width: 55px;
+}
+
+[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.total {
+    margin: 25px auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 25px;
+    color: white;
+}
+
+.checkout {
+    font-family: inherit;
+    font-style: inherit;
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #817070;
+    border: 3px solid white;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.checkout:hover {
+    color: white;
+    background-color: #817070;
+}
