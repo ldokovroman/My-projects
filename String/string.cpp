@@ -45,8 +45,6 @@ void String::append(const String &other) {
 }
 
 String::PastString String::operator[](size_t i) const {
-    return String::PastString(i, String(str + i));
+    return PastString(i, String(str + i));
 }
-
-
 
